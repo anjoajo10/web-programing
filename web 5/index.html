@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Image Gallery</h1>
+    <p class="subtitle">Explore beautiful images</p>
+
+    <!-- Image Grid -->
+    <div class="gallery">
+        <img src="https://picsum.photos/id/1015/600/400"
+             alt="Mountain landscape" onclick="openSlide(0)">
+
+        <img src="https://picsum.photos/id/1016/600/400"
+             alt="Nature landscape" onclick="openSlide(1)">
+
+        <img src="https://picsum.photos/id/1018/600/400"
+             alt="Mountain and river" onclick="openSlide(2)">
+
+        <img src="https://picsum.photos/id/1020/600/400"
+             alt="Wildlife" onclick="openSlide(3)">
+
+        <img src="https://picsum.photos/id/1024/600/400"
+             alt="Animal portrait" onclick="openSlide(4)">
+
+        <img src="https://picsum.photos/id/1039/600/400"
+             alt="Forest landscape" onclick="openSlide(5)">
+    </div>
+
+    <!-- Slideshow Modal -->
+    <div id="slideshow" class="modal">
+        <button class="close" onclick="closeSlide()"
+                aria-label="Close slideshow">&times;</button>
+
+        <button class="prev" onclick="changeSlide(-1)"
+                aria-label="Previous image">&#10094;</button>
+
+        <img id="slideImage" src="" alt="Selected gallery image">
+
+        <button class="next" onclick="changeSlide(1)"
+                aria-label="Next image">&#10095;</button>
+
+        <p id="caption"></p>
+
+        <button id="autoPlayBtn" onclick="toggleAutoPlay()">
+            Start Auto-play
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+:root {
+    --primary: #2f80ed;
+    --secondary: #7c3aed;
+    --dark: #111827;
+    --light: #f8fafc;
+    --accent: #38bdf8;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+    background: var(--light);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: var(--dark);
+}
+
+.logo {
+    color: var(--accent);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 400px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    color: var(--dark);
+    background: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.about {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.services {
+    padding: 60px 8%;
+    background: #eef2ff;
+}
+
+.services h2 {
+    text-align: center;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    padding: 25px;
+    border-top: 4px solid var(--accent);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08);
+}
+
+footer {
+    padding: 40px 8%;
+    text-align: center;
+    color: white;
+    background: var(--dark);
+}
+
+.copyright {
+    margin-top: 30px;
+    color: #94a3b8;
+}
